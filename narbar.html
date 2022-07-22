@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="author" content="chidiebere jonathan">
+            <title>Boldmind e-commerce</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/8399a05e24.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="/narbarstyles.css"> 
+        </head>
+        <body>
+<nav>
+    <div class="container0">
+        <div id="i" class="inav">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+    </div>
+
+    <ul id="nav" class="nav">
+      <a href="#HOME">HOME</a>
+     <a href="#Missions">OUR MISSIONS</a>
+      <a href="#About">ABOUT</a>
+      <a href="#Contact">CONTACT</a>
+    </ul>
+</nav>  
+<h1>Resize window</h1>
+
+<script>
+    var nav = document.getElementById('nav'),
+                        i = document.getElementById('i'),
+                        c1 = document.getElementsByTagName('div')[2],
+                        c2 = document.getElementsByTagName('div')[3],
+                        c3 = document.getElementsByTagName('div')[4];
+                    i.addEventListener('click', function() {
+                        if (nav.className.match(/\bopen\b/)) {
+                            nav.classList.remove('open');
+                            c1.classList.remove('close-c1');
+                            c2.classList.remove('close-c2');
+                            c3.classList.remove('close-c3');
+                        } else {
+                            nav.classList.add('open');
+                            c1.classList.add('close-c1');
+                            c2.classList.add('close-c2');
+                            c3.classList.add('close-c3');
+                        }
+                    });
+                    nav.addEventListener('click', function() {
+                        nav.classList.remove('open');
+                        c1.classList.remove('close-c1');
+                        c2.classList.remove('close-c2');
+                        c3.classList.remove('close-c3');
+                    });
+</script>
